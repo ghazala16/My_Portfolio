@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9a7bb4a9d1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Name.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1> Hi, I'm <span>Ghazala</span><br> Jamal From India</h1>
+            </div>
+        </div>
+    </div>
+    <!------------About Section------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Tech_Girl.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p> Results-oriented Software Development Engineer with expertise in backend development, cloud
+                        computing, and distributed systems. Proficient in Java, Python, Node.js, and AWS, with a strong
+                        foundation in data structures, algorithms, and system design. Passionate about building scalable
+                        and efficient solutions that adhere to high standards of software engineering. Seeking to
+                        contribute my problem-solving skills and development expertise in an SDE-1 role.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Fullstack Developer <span><br>Building end-to-end web/app solutions</span></li>
+                            <li>DevOps Engineer <span><br>Automating deployments and managing CI/CD pipelines</span></li>
+                            <li>Backend Developer <span><br>Designing scalable server-side architectures</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Fullstack Developer 
+                                <span><br>Designed and optimized microservices architecture using Java, Node.js, and JavaScript for high-performance applications.</span>
+                            </li>
+                            <li>Backend Engineer 
+                                <span><br>Led backend optimizations that improved API response time by 40% and reduced database load by 30%. Developed and maintained RESTful APIs, ensuring efficient data retrieval and scalability.</span>
+                            </li>
+                            <li>DevOps Engineer 
+                                <span><br>Enhanced system fault tolerance and disaster recovery mechanisms, increasing uptime to 99.9%. Worked closely with cross-functional teams to design and deploy secure, cloud-native applications on AWS.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>B.E. in Computer Science 
+                                <span><br>Completed coursework in Data Structures, Object-Oriented Design, and System Design Principles</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------Services Section------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Backend Development</h2>
+                    <p>Designing and implementing scalable backend systems using Java, Python, and Node.js. Experienced in building RESTful APIs and integrating with cloud services.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud & DevOps</h2>
+                    <p>Deploying and managing cloud infrastructure on AWS. Skilled in CI/CD pipelines, containerization, and distributed systems architecture.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-sitemap"></i>
+                    <h2>System Design</h2>
+                    <p>Crafting efficient and scalable solutions through strong fundamentals in data structures, algorithms, and both high- and low-level system design.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    div>
+    </div>
+    <!------------Portfolio Section------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="Backend Development Project">
+                    <div class="layer">
+                        <h3>Scalable Backend API</h3>
+                        <p>Built a RESTful backend using Node.js and Express, deployed on AWS EC2 with MongoDB and integrated logging and error handling.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Cloud Deployment Project">
+                    <div class="layer">
+                        <h3>Cloud Infrastructure Setup</h3>
+                        <p>Configured and deployed a microservices-based application on AWS using EC2, S3, and Lambda with CI/CD integration via GitHub Actions.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="System Design Project">
+                    <div class="layer">
+                        <h3>System Design Architecture</h3>
+                        <p>Designed a distributed system with high availability, covering both low-level and high-level design patterns for real-world scenarios.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    
+    <!------------Contact Section------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-share-from-square"></i>contact@example.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>+91 1234567890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+                    <div class="contact-right"></div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright 2023. <i class="fa-solid fa-heart"></i> All Rights</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <form name="submit-to-google-sheet">
+        <input name="email" type="email" placeholder="Email" required>
+        <button type="submit">Send</button>
+    </form>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzhShgc-lOLKSBfacVTXoGOqAqW2IcgMtbeSIjypCLgdHBAfnSr5NkKSqbXkMlaRp-85g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000);
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
